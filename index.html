@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web Page / Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="logo">FCO ESPINEL VEAS</div>
+            <nav class="nav">
+              <a href="index.html">Home</a>
+              <a href="aboutme.html">About Me</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+              <h1>My Personal Portfolio</h1>
+              <p>This is my first professional website created to showcase my work. Here, you can see my progress throughout this course. You can also find more information about me on the next page, as well as a contact form on the third page.</p>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2>My Work</h2>
+          
+            <div class="portfolio-grid">
+  
+                <article class="card">
+                    <img src="images/Project 1.png" alt="Project 1">
+                    <div class="card-content">
+                        <h3>Project 1</h3>
+                        <p>In this activity, I applied what I have learned about HTML structure and elements to create my first simple web page. Using headings, paragraphs, lists, images, links, and forms, I built a basic personal webpage that introduces yourself.</p>
+                        <span>HTML</span>
+                    </div>
+                </article>
+  
+                <article class="card">
+                    <img src="images/Project 2.png" alt="Project 2">
+                    <div class="card-content">
+                        <h3>Project 2</h3>
+                        <p>In this activity, I applied styles to my personal web page. I modified the background, text styles, colors, and layout to make your webpage visually appealing.</p>
+                        <span>HTML · CSS</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="images/Project 3.png" alt="Project 3">
+                    <div class="card-content">
+                        <h3>Project 3</h3>
+                        <p>In this activity, I added three simple interactive features to my web page. Specifically, I included a button that changes the text when clicked, a background color switcher, and a form with input validation.</p>
+                        <span>HTML · CSS · JavaScript</span>
+                    </div>
+                </article>
+                
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-card">
+              
+
+          
+              <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="aboutme.html">About</a>
+                <a href="contact.html">Contact</a>
+              </nav>
+          
+              <p class="footer-tech">HTML · CSS · JavaScript</p>
+
+              <a href="mailto:fgespinel@crearonline.edu.ec" class="contact-email">
+              fgespinel@crearonline.edu.ec
+              </a>
+              
+
+              <p class="footer-copy">© <span id="year"></span> Fco Espinel Veas</p>
+
+              <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+              </script>
+          
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

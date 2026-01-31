@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web Page / Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="logo">FCO ESPINEL VEAS</div>
+            <nav class="nav">
+              <a href="index.html">Home</a>
+              <a href="aboutme.html">About Me</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        
+        <section class="page-banner">
+            <h1>Contact</h1>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+
+            <div class="portfolio-grid">
+
+              <div class="card card-form">
+          
+                <div class="card-content">
+                  <h2>Information</h2>
+          
+                  <form id="signupForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <span id="nameError" class="error"></span>
+          
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <span id="emailError" class="error"></span>
+
+                    <label for="message">Message</label>
+                    <textarea id="message"></textarea>
+          
+                    <button type="submit">Submit</button>
+                  </form>
+          
+                </div>
+              </div>
+          
+            </div>
+          
+        </section>
+
+        <footer class="footer">
+            <div class="footer-card">
+              
+
+          
+              <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="aboutme.html">About</a>
+                <a href="contact.html">Contact</a>
+              </nav>
+          
+              <p class="footer-tech">HTML · CSS · JavaScript</p>
+
+              <a href="mailto:fgespinel@crearonline.edu.ec" class="contact-email">
+              fgespinel@crearonline.edu.ec
+              </a>
+              
+
+              <p class="footer-copy">© <span id="year"></span> Fco Espinel Veas</p>
+
+              <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+              </script>
+          
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
